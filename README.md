@@ -8,58 +8,123 @@
 
 **Antigravity Awesome Skills** is a curated, battle-tested collection of **58 high-performance skills** compatible with both **Antigravity** and **Claude Code**.
 
+## 📍 Table of Contents
+
+- [Features & Categories](#features--categories)
+- [Full Skill Registry](#full-skill-registry-5858)
+- [Installation](#installation)
+- [How to Contribute](#how-to-contribute)
+- [Credits & Sources](#credits--sources)
+- [License](#license)
+
 Whether you are using the Google Deepmind Antigravity framework or the standard Anthropic Claude Code CLI, these skills are designed to drop right in and supercharge your agent.
 
 This repository aggregates the best capabilities from across the open-source community, transforming your AI assistant into a full-stack digital agency capable of Engineering, Design, Security, Marketing, and Autonomous Operations.
 
-## 🚀 Features & Categories
+## Features & Categories
 
-- **🎨 Creative & Design**: Algorithmic art, Canvas design, Professional UI/UX, Design Systems.
-- **🛠️ Development & Engineering**: TDD, Clean Architecture, Playwright E2E Testing, Systematic Debugging.
-- **🛡️ Cybersecurity & Auditing**: Ethical Hacking, OWASP Audits, AWS Penetration Testing, SecOps.
-- **🛸 Autonomous Agents**: Loki Mode (Startup-in-a-box), Subagent Orchestration.
-- **📈 Business & Strategy**: Product Management (PRD/RICE), Marketing Strategy (SEO/ASO), Senior Architecture.
-- **🏗️ Infrastructure**: Backend/Frontend Guidelines, Docker, Git Workflows.
+The repository is organized into several key areas of expertise:
+
+| Category                 | Skills Included                                                                        |
+| :----------------------- | :------------------------------------------------------------------------------------- |
+| **🎨 Creative & Design** | UI/UX Pro Max, Frontend Design, Canvas, Algorithmic Art, Theme Factory, D3 Viz         |
+| **🛠️ Development**       | TDD, Systematic Debugging, Webapp Testing, Backend/Frontend Guidelines, React Patterns |
+| **🛡️ Cybersecurity**     | Ethical Hacking, AWS Pentesting, OWASP Top 100, Pentest Checklists                     |
+| **🛸 Autonomous**        | **Loki Mode** (Startup-in-a-box), Subagent Orchestration, Parallel Execution           |
+| **📈 Strategy**          | Product Manager Toolkit, Content Creator, ASO, Doc Co-authoring, Brainstorming         |
+| **🏗️ Infrastructure**    | Linux Shell Scripting, Git Worktrees, Conventional Commits, File Organization          |
 
 ---
 
-## 📦 Installation
+## Full Skill Registry (58/58)
+
+Below is the complete list of available skills. Each skill folder contains a `SKILL.md` that can be imported into Antigravity or Claude Code.
+
+| Skill Name                 | Description                                                | Path                                        |
+| :------------------------- | :--------------------------------------------------------- | :------------------------------------------ |
+| **Algorithmic Art**        | Creative generative art using p5.js and seeded randomness. | `skills/algorithmic-art`                    |
+| **App Store Optimization** | Complete ASO toolkit for iOS and Android app performance.  | `skills/app-store-optimization`             |
+| **AWS Pentesting**         | Specialized security assessment for Amazon Web Services.   | `skills/aws-penetration-testing`            |
+| **Backend Guidelines**     | Core architecture patterns for Node/Express microservices. | `skills/backend-dev-guidelines`             |
+| **Brainstorming**          | Requirement discovery and intent exploration framework.    | `skills/brainstorming`                      |
+| **Brand Guidelines**       | Anthropic-specific styling and visual standards.           | `skills/brand-guidelines`                   |
+| **Canvas Design**          | Beautiful static visual design in PDF and PNG.             | `skills/canvas-design`                      |
+| **Claude D3.js**           | Advanced data visualization with D3.js.                    | `skills/claude-d3js-skill`                  |
+| **Content Creator**        | SEO-optimized marketing and brand voice toolkit.           | `skills/content-creator`                    |
+| **Core Components**        | Design system tokens and baseline UI patterns.             | `skills/core-components`                    |
+| **Doc Co-authoring**       | Structured workflow for technical documentation.           | `skills/doc-coauthoring`                    |
+| **DOCX/PPTX/XLSX**         | Advanced MS Office document manipulation.                  | `skills/docx`, `skills/pptx`, `skills/xlsx` |
+| **Ethical Hacking**        | Comprehensive penetration testing lifecycle methodology.   | `skills/ethical-hacking-methodology`        |
+| **Frontend Design**        | Production-grade UI component implementation.              | `skills/frontend-design`                    |
+| **Frontend Guidelines**    | Modern React/TS development patterns and file structure.   | `skills/frontend-dev-guidelines`            |
+| **Git Pushing**            | Automated staging and conventional commits.                | `skills/git-pushing`                        |
+| **Internal Comms**         | Standardized corporate communication templates.            | `skills/internal-comms`                     |
+| **Kaizen**                 | Continuous improvement and error-proofing (Poka-Yoke).     | `skills/kaizen`                             |
+| **Linux Shell Scripting**  | Production-ready shell scripts for automation.             | `skills/linux-shell-scripting`              |
+| **Loki Mode**              | Fully autonomous startup development engine.               | `skills/loki-mode`                          |
+| **MCP Builder**            | High-quality Model Context Protocol (MCP) server creation. | `skills/mcp-builder`                        |
+| **NotebookLM**             | Source-grounded querying via Google NotebookLM.            | `skills/notebooklm`                         |
+| **PDF Toolkit**            | Extraction, creation, and manipulation of PDF docs.        | `skills/pdf`                                |
+| **Pentest Checklist**      | Structured security assessment planning and scoping.       | `skills/pentest-checklist`                  |
+| **Product Toolkit**        | RICE prioritization and product discovery frameworks.      | `skills/product-manager-toolkit`            |
+| **Prompt Engineering**     | Expert patterns for LLM instruction optimization.          | `skills/prompt-engineering`                 |
+| **React UI Patterns**      | Standardized loading states and error handling for React.  | `skills/react-ui-patterns`                  |
+| **Senior Architect**       | Scalable system design and architecture diagrams.          | `skills/senior-architect`                   |
+| **Skill Creator**          | Meta-skill for building high-performance agentic skills.   | `skills/skill-creator`                      |
+| **Software Architecture**  | Quality-focused design principles and analysis.            | `skills/software-architecture`              |
+| **Systematic Debugging**   | Root cause analysis and structured fix verification.       | `skills/systematic-debugging`               |
+| **TDD**                    | Test-Driven Development workflow and red-green-refactor.   | `skills/test-driven-development`            |
+| **UI/UX Pro Max**          | Advanced design intelligence and 50+ styling options.      | `skills/ui-ux-pro-max`                      |
+| **Web Artifacts**          | Complex React/Tailwind/Shadcn UI artifact builder.         | `skills/web-artifacts-builder`              |
+| **Webapp Testing**         | Local web application testing with Playwright.             | `skills/webapp-testing`                     |
+
+> [!TIP]
+> Use the `validate_skills.py` script in the `scripts/` directory to ensure all skills are properly formatted and ready for use.
+
+---
+
+## Installation
 
 To use these skills with **Antigravity** or **Claude Code**, clone this repository into your agent's skills directory:
 
 ```bash
-# Clone directly into your skills folder
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
 ```
 
-Or copy valid markdown files (`SKILL.md`) to your existing configuration.
+---
+
+## How to Contribute
+
+We welcome contributions from the community! To add a new skill:
+
+1. **Fork** the repository.
+2. **Create a new directory** inside `skills/` for your skill.
+3. **Add a `SKILL.md`** with the required frontmatter (name and description).
+4. **Run validation**: `python3 scripts/validate_skills.py`.
+5. **Submit a Pull Request**.
+
+Please ensure your skill follows the Antigravity/Claude Code best practices.
 
 ---
 
-## 🏆 Credits & Sources
+## Credits & Sources
 
-This collection would not be possible without the incredible work of the Claude Code community. This repository is an aggregation of the following open-source projects:
+This collection would not be possible without the incredible work of the Claude Code community:
 
-### 🌟 Core Foundation
-
-- **[obra/superpowers](https://github.com/obra/superpowers)**: The original "Superpowers" framework by **Jesse Vincent**.
-- **[guanyang/antigravity-skills](https://github.com/guanyang/antigravity-skills)**: The Antigravity fork/extension of the core superpowers.
-
-### 👥 Community Contributors
-
-- **[diet103/claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase)**: Infrastructure, Backend/Frontend Guidelines, and Skill Development meta-skills.
-- **[ChrisWiles/claude-code-showcase](https://github.com/ChrisWiles/claude-code-showcase)**: React UI patterns, Design System components, and Testing factories.
-- **[travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)**: Autonomous agents (Loki Mode), Playwright integration, and D3.js visualization.
-- **[zebbern/claude-code-guide](https://github.com/zebbern/claude-code-guide)**: Comprehensive Security suite (Ethical Hacking, OWASP, AWS Auditing).
-- **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)**: Senior Engineering roles, Product Management toolkit, Content Creator & ASO skills.
+- **[obra/superpowers](https://github.com/obra/superpowers)**: The original "Superpowers" by Jesse Vincent.
+- **[guanyang/antigravity-skills](https://github.com/guanyang/antigravity-skills)**: Core Antigravity extensions.
+- **[diet103/claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase)**: Infrastructure and Backend/Frontend Guidelines.
+- **[ChrisWiles/claude-code-showcase](https://github.com/ChrisWiles/claude-code-showcase)**: React UI patterns and Design Systems.
+- **[travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)**: Loki Mode and Playwright integration.
+- **[zebbern/claude-code-guide](https://github.com/zebbern/claude-code-guide)**: Comprehensive Security suite.
+- **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)**: Senior Engineering and PM toolkit.
 
 ---
 
-## 🛡️ License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-Individual skills may retain the licenses of their original repositories.
+MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-**Keywords**: Claude Code, Antigravity, Agentic Skills, MCT, Model Context Protocol, AI Agents, Autonomous Coding, Prompt Engineering, Security Auditing, React Patterns, Microservices.
+**Keywords**: Claude Code, Antigravity, Agentic Skills, MCT, AI Agents, Autonomous Coding, Security Auditing, React Patterns.
